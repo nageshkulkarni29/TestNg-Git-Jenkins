@@ -1,0 +1,10 @@
+<suite name="Test Suite" parallel="methods" thread-count="1">
+<parameter name="exampleDesc" value="TestNG Parameter Example"></parameter>
+<test name="Test">
+<classes>
+<class name="NKpackage.NewTest" />
+<class name="NKpackage.NewTest1" />
+</classes>
+</test>
+
+</suite>
