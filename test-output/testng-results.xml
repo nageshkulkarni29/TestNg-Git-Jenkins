@@ -5,53 +5,69 @@
       <![CDATA[Browser Launched]]>
     </line>
     <line>
-      <![CDATA[Browser Launched]]>
-    </line>
-    <line>
       <![CDATA[Browser Closed]]>
     </line>
+    <line>
+      <![CDATA[Browser Launched]]>
+    </line>
   </reporter-output>
-  <suite name="Test Suite" duration-ms="24587" started-at="2018-09-14T11:26:22Z" finished-at="2018-09-14T11:26:47Z">
+  <suite name="Test Suite" duration-ms="209161" started-at="2018-09-23T07:01:09Z" finished-at="2018-09-23T07:04:38Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24587" started-at="2018-09-14T11:26:22Z" finished-at="2018-09-14T11:26:47Z">
+    <test name="IETest" duration-ms="109169" started-at="2018-09-23T07:01:09Z" finished-at="2018-09-23T07:02:58Z">
       <class name="NKpackage.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:NKpackage.NewTest@1810399e]" name="beforeTest" is-config="true" duration-ms="4128" started-at="2018-09-14T16:56:22Z" finished-at="2018-09-14T16:56:26Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:NKpackage.NewTest@4b14c583]" name="beforeTest" is-config="true" duration-ms="99341" started-at="2018-09-23T12:31:10Z" finished-at="2018-09-23T12:32:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:NKpackage.NewTest1@32d992b2]" name="beforeTest" is-config="true" duration-ms="3332" started-at="2018-09-14T16:56:26Z" finished-at="2018-09-14T16:56:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="NewTest()[pri:0, instance:NKpackage.NewTest@1810399e]" name="NewTest" duration-ms="4886" started-at="2018-09-14T16:56:30Z" finished-at="2018-09-14T16:56:34Z">
+        <test-method status="PASS" signature="NewTest()[pri:0, instance:NKpackage.NewTest@4b14c583]" name="NewTest" duration-ms="3438" started-at="2018-09-23T12:32:50Z" finished-at="2018-09-23T12:32:53Z">
           <reporter-output>
             <line>
               <![CDATA[Browser Launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- NewTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:NKpackage.NewTest@1810399e]" name="afterTest" is-config="true" duration-ms="1989" started-at="2018-09-14T16:56:44Z" finished-at="2018-09-14T16:56:46Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:NKpackage.NewTest@4b14c583]" name="afterTest" is-config="true" duration-ms="4115" started-at="2018-09-23T12:32:54Z" finished-at="2018-09-23T12:32:58Z">
           <reporter-output>
             <line>
               <![CDATA[Browser Closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:NKpackage.NewTest1@32d992b2]" name="afterTest" is-config="true" duration-ms="1050" started-at="2018-09-14T16:56:46Z" finished-at="2018-09-14T16:56:47Z">
+      </class> <!-- NKpackage.NewTest -->
+    </test> <!-- IETest -->
+    <test name="Chrometest" duration-ms="99949" started-at="2018-09-23T07:02:58Z" finished-at="2018-09-23T07:04:38Z">
+      <class name="NKpackage.NewTest1">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:NKpackage.NewTest1@3c419631]" name="beforeTest" is-config="true" duration-ms="3586" started-at="2018-09-23T12:33:06Z" finished-at="2018-09-23T12:33:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- NKpackage.NewTest -->
-      <class name="NKpackage.NewTest1">
-        <test-method status="PASS" signature="NewTest1()[pri:0, instance:NKpackage.NewTest1@32d992b2]" name="NewTest1" duration-ms="9150" started-at="2018-09-14T16:56:34Z" finished-at="2018-09-14T16:56:44Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="NewTest1()[pri:0, instance:NKpackage.NewTest1@3c419631]" name="NewTest1" duration-ms="86858" started-at="2018-09-23T12:33:10Z" finished-at="2018-09-23T12:34:36Z">
           <reporter-output>
             <line>
               <![CDATA[Browser Launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- NewTest1 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:NKpackage.NewTest1@3c419631]" name="afterTest" is-config="true" duration-ms="1184" started-at="2018-09-23T12:34:37Z" finished-at="2018-09-23T12:34:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- NKpackage.NewTest1 -->
-    </test> <!-- Test -->
+    </test> <!-- Chrometest -->
   </suite> <!-- Test Suite -->
 </testng-results>

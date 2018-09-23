@@ -5,5 +5,7 @@
 	<classpathentry kind="lib" path="C:/Jars/selenium-java-2.53.1.jar"/>
 	<classpathentry kind="lib" path="C:/Jars/selenium-server-standalone-2.53.1.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Jars/extentreports-java-v2.41.1/extentreports-java-2.41.1.jar"/>
+	<classpathentry kind="lib" path="C:/Jars/freemarker-2.3.23.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

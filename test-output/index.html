@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Test_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -124,21 +124,6 @@
           <div class="suite-Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">NKpackage.NewTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="NewTest">
-                  </a> <!-- NewTest -->
-                  <span class="method-name">NewTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
-          <div class="suite-Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">NKpackage.NewTest1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -147,6 +132,21 @@
                   <a name="NewTest1">
                   </a> <!-- NewTest1 -->
                   <span class="method-name">NewTest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">NKpackage.NewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewTest">
+                  </a> <!-- NewTest -->
+                  <span class="method-name">NewTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,14 +160,20 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; name=&quot;Test Suite&quot; parallel=&quot;methods&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Test Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;exampleDesc&quot; value=&quot;TestNG Parameter Example&quot;/&gt;
-  &lt;test name=&quot;Test&quot;&gt;
+  &lt;test name=&quot;IETest&quot;&gt;
+    &lt;parameter name=&quot;sBrowser&quot; value=&quot;IE&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;NKpackage.NewTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- IETest --&gt;
+  &lt;test name=&quot;Chrometest&quot;&gt;
+    &lt;parameter name=&quot;sBrowser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;NKpackage.NewTest1&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Chrometest --&gt;
 &lt;/suite&gt; &lt;!-- Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,7 +185,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">IETest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Chrometest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,16 +218,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'NewTest1')
 data.setCell(0, 2, 'NKpackage.NewTest1')
-data.setCell(0, 3, 9150);
+data.setCell(0, 3, 86858);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'NewTest')
 data.setCell(1, 2, 'NKpackage.NewTest')
-data.setCell(1, 3, 4886);
+data.setCell(1, 3, 3438);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Test_Suite">
               </div> <!-- times-div-Test_Suite -->
             </div> <!-- times-div -->
@@ -230,13 +239,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">NewTest1</span>
+              <span class="reporter-method-name">NewTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Browser Launched</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">NewTest</span>
+              <span class="reporter-method-name">NewTest1</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Browser Launched</span>
               </div> <!-- reporter-method-output-div -->
@@ -258,43 +267,31 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">NKpackage.NewTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
+                <span class="method-name">beforeTest(IE)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">NKpackage.NewTest1</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">4128 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">NKpackage.NewTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">NewTest</span>
-                <span class="method-start">7496 ms</span>
+                <span class="method-start">99439 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">NKpackage.NewTest1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">NewTest1</span>
-                <span class="method-start">12388 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">NKpackage.NewTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">21543 ms</span>
+                <span class="method-start">103534 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">NKpackage.NewTest1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(Chrome)</span>
+                <span class="method-start">115942 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">NewTest1</span>
+                <span class="method-start">119530 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">23532 ms</span>
+                <span class="method-start">206457 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

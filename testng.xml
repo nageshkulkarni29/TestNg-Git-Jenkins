@@ -1,10 +1,16 @@
-<suite name="Test Suite" parallel="methods" thread-count="1">
+<suite name="Test Suite" parallel="tests" thread-count="1">
 <parameter name="exampleDesc" value="TestNG Parameter Example"></parameter>
-<test name="Test">
-<classes>
+<test name="IETest">
+<classes>	
+<parameter name="sBrowser" value="IE"></parameter>
 <class name="NKpackage.NewTest" />
-<class name="NKpackage.NewTest1" />
 </classes>
 </test>
 
+<test name="Chrometest">
+<classes>
+<parameter name="sBrowser" value="Chrome"></parameter>
+<class name="NKpackage.NewTest1" />
+</classes>
+</test>
 </suite>
