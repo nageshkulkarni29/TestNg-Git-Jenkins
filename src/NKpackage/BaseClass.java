@@ -22,9 +22,12 @@ public class BaseClass implements ISuiteListener, ITestListener , IRetryAnalyzer
 	 protected static ExtentReports extent;
 	 protected static ExtentTest extenttest;
 	int counter = 0;
-	int retryLimit = 3; 	
-	   
+	int retryLimit = 0; 	
 	
+	protected boolean Testbody(){
+		return true;
+		
+	}
 	public void createwebdriver(String Browsername){
 		File file1;
 		switch (Browsername){		
@@ -66,6 +69,8 @@ public class BaseClass implements ISuiteListener, ITestListener , IRetryAnalyzer
 	@Override
 	public void onStart(ITestContext arg0) {
 		// TODO Auto-generated method stub
+		System.out.println(arg0.getAttributeNames());
+		//System.out.println(arg0.("m_instance"));
 		//Reporter.log("Reporter Test Start" + arg0.getName(), true);
 		extenttest = extent.startTest(arg0.getName());
 		//extenttest=arg0.getName();
@@ -87,11 +92,13 @@ public class BaseClass implements ISuiteListener, ITestListener , IRetryAnalyzer
 	public void onTestFailure(ITestResult arg0) {
 		// TODO Auto-generated method stub
 		//Reporter.log("Reporter Test Failure" + arg0.getName(), true);
+		Testbody();
 		System.out.println("on Test Failure");
 		extenttest.log(LogStatus.FAIL, "Test failure reported");
 		extent.flush();
 		
 	}
+
 
 	@Override
 	public void onTestSkipped(ITestResult arg0) {
@@ -153,5 +160,6 @@ public class BaseClass implements ISuiteListener, ITestListener , IRetryAnalyzer
 		}
 		return false;
 	}
+	
 
 }

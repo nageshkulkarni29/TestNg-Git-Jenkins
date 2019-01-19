@@ -11,12 +11,12 @@
       <![CDATA[Browser Launched]]>
     </line>
   </reporter-output>
-  <suite name="Test Suite" duration-ms="209161" started-at="2018-09-23T07:01:09Z" finished-at="2018-09-23T07:04:38Z">
+  <suite name="Test Suite" duration-ms="31510" started-at="2019-01-19T12:50:08Z" finished-at="2019-01-19T12:50:39Z">
     <groups>
     </groups>
-    <test name="IETest" duration-ms="109169" started-at="2018-09-23T07:01:09Z" finished-at="2018-09-23T07:02:58Z">
+    <test name="IETest" duration-ms="4638" started-at="2019-01-19T12:50:08Z" finished-at="2019-01-19T12:50:12Z">
       <class name="NKpackage.NewTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:NKpackage.NewTest@4b14c583]" name="beforeTest" is-config="true" duration-ms="99341" started-at="2018-09-23T12:31:10Z" finished-at="2018-09-23T12:32:49Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:NKpackage.NewTest@3a82f6ef]" name="beforeTest" is-config="true" duration-ms="2487" started-at="2019-01-19T18:20:08Z" finished-at="2019-01-19T18:20:10Z">
           <params>
             <param index="0">
               <value>
@@ -27,14 +27,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="NewTest()[pri:0, instance:NKpackage.NewTest@4b14c583]" name="NewTest" duration-ms="3438" started-at="2018-09-23T12:32:50Z" finished-at="2018-09-23T12:32:53Z">
+        <test-method status="PASS" signature="NewTest()[pri:0, instance:NKpackage.NewTest@3a82f6ef]" name="NewTest" duration-ms="13" started-at="2019-01-19T18:20:10Z" finished-at="2019-01-19T18:20:10Z">
           <reporter-output>
             <line>
               <![CDATA[Browser Launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- NewTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:NKpackage.NewTest@4b14c583]" name="afterTest" is-config="true" duration-ms="4115" started-at="2018-09-23T12:32:54Z" finished-at="2018-09-23T12:32:58Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:NKpackage.NewTest@3a82f6ef]" name="afterTest" is-config="true" duration-ms="1642" started-at="2019-01-19T18:20:11Z" finished-at="2019-01-19T18:20:12Z">
           <reporter-output>
             <line>
               <![CDATA[Browser Closed]]>
@@ -43,9 +43,9 @@
         </test-method> <!-- afterTest -->
       </class> <!-- NKpackage.NewTest -->
     </test> <!-- IETest -->
-    <test name="Chrometest" duration-ms="99949" started-at="2018-09-23T07:02:58Z" finished-at="2018-09-23T07:04:38Z">
+    <test name="Chrometest" duration-ms="26851" started-at="2019-01-19T12:50:12Z" finished-at="2019-01-19T12:50:39Z">
       <class name="NKpackage.NewTest1">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:NKpackage.NewTest1@3c419631]" name="beforeTest" is-config="true" duration-ms="3586" started-at="2018-09-23T12:33:06Z" finished-at="2018-09-23T12:33:10Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:NKpackage.NewTest1@6767c1fc]" name="beforeTest" is-config="true" duration-ms="3404" started-at="2019-01-19T18:20:12Z" finished-at="2019-01-19T18:20:16Z">
           <params>
             <param index="0">
               <value>
@@ -56,14 +56,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="NewTest1()[pri:0, instance:NKpackage.NewTest1@3c419631]" name="NewTest1" duration-ms="86858" started-at="2018-09-23T12:33:10Z" finished-at="2018-09-23T12:34:36Z">
+        <test-method status="PASS" signature="NewTest1()[pri:0, instance:NKpackage.NewTest1@6767c1fc]" name="NewTest1" duration-ms="22316" started-at="2019-01-19T18:20:16Z" finished-at="2019-01-19T18:20:38Z">
           <reporter-output>
             <line>
               <![CDATA[Browser Launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- NewTest1 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:NKpackage.NewTest1@3c419631]" name="afterTest" is-config="true" duration-ms="1184" started-at="2018-09-23T12:34:37Z" finished-at="2018-09-23T12:34:38Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:NKpackage.NewTest1@6767c1fc]" name="afterTest" is-config="true" duration-ms="1008" started-at="2019-01-19T18:20:38Z" finished-at="2019-01-19T18:20:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

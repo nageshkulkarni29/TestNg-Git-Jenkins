@@ -14,8 +14,9 @@
       </class> <!-- NKpackage.NewTest1 -->
       <class name="NKpackage.NewTest">
         <methods>
+          <include name="beforeTest"/>
           <include name="NewTest"/>
-          <include name="createwebdriver"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- NKpackage.NewTest -->
     </classes>

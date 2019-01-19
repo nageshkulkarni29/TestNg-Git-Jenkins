@@ -41,4 +41,6 @@ public class NewTest1 extends BaseClass {
 	  extenttest.log(LogStatus.PASS, "driver closed","NSE application Closed");
   }
 
+
+
 }
