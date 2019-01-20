@@ -2,9 +2,10 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -37,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_Suite">
-              <span class="suite-name border-passed">Test Suite</span>
+              <span class="suite-name border-skipped">Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Test_Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods passed suite-Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Test_Suite -->
-                      <a href="#" panel-name="suite-Test_Suite" class="show-methods passed suite-Test_Suite"> (show)</a> <!-- show-methods passed suite-Test_Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods skipped suite-Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods skipped suite-Test_Suite"> (show)</a> <!-- show-methods skipped suite-Test_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Test_Suite">
+                    <div class="method-list-content skipped suite-Test_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="NKpackage.NewTest" hash-for-method="NewTest">NewTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="NKpackage.NewTest1" hash-for-method="NewTest1">NewTest1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Test_Suite -->
+                    </div> <!-- method-list-content skipped suite-Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_Suite" class="panel Test_Suite">
-          <div class="suite-Test_Suite-class-passed">
+          <div class="suite-Test_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">NKpackage.NewTest1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -132,25 +128,50 @@
                   <a name="NewTest1">
                   </a> <!-- NewTest1 -->
                   <span class="method-name">NewTest1</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;ShivChindambar&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+	at NKpackage.BaseClass.createwebdriver(BaseClass.java:44)
+	at NKpackage.NewTest1.beforeTest(NewTest1.java:33)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;ShivChindambar&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:166)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:78)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 27 more
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:३५४७०/status] to be available after २०००१ ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:107)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:175)
+	... 30 more
+Caused by: com.google.common.util.concurrent.UncheckedTimeoutException: java.util.concurrent.TimeoutException
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:143)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:80)
+	... 31 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:130)
+	... 32 more
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
-          <div class="suite-Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">NKpackage.NewTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="NewTest">
-                  </a> <!-- NewTest -->
-                  <span class="method-name">NewTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
+          </div> <!-- suite-Test_Suite-class-skipped -->
         </div> <!-- panel Test_Suite -->
         <div panel-name="test-xml-Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -162,13 +183,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; name=&quot;Test Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;exampleDesc&quot; value=&quot;TestNG Parameter Example&quot;/&gt;
-  &lt;test name=&quot;IETest&quot;&gt;
-    &lt;parameter name=&quot;sBrowser&quot; value=&quot;IE&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;NKpackage.NewTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- IETest --&gt;
-  &lt;test name=&quot;Chrometest&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Chrometest&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;sBrowser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;NKpackage.NewTest1&quot;/&gt;
@@ -184,9 +199,6 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">IETest (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">Chrometest (1 class)</span>
               </li>
@@ -214,20 +226,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'NewTest1')
 data.setCell(0, 2, 'NKpackage.NewTest1')
-data.setCell(0, 3, 22316);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'NewTest')
-data.setCell(1, 2, 'NKpackage.NewTest')
-data.setCell(1, 3, 13);
+data.setCell(0, 3, 0);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Test_Suite">
               </div> <!-- times-div-Test_Suite -->
             </div> <!-- times-div -->
@@ -238,18 +246,6 @@ return data;
             <span class="header-content">Reporter output for Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">NewTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Browser Launched</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">NewTest1</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Browser Launched</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Test_Suite" class="panel">
@@ -265,34 +261,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">NKpackage.NewTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest(IE)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">NewTest</span>
-                <span class="method-start">2494 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">2984 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">NKpackage.NewTest1</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest(Chrome)</span>
-                <span class="method-start">4649 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">NewTest1</span>
-                <span class="method-start">8055 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">30490 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeTest(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

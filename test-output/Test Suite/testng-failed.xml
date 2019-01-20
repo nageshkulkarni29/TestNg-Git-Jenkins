@@ -2,23 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Failed suite [Test Suite]" parallel="tests">
   <parameter name="exampleDesc" value="TestNG Parameter Example"/>
-  <parameter name="sBrowser" value="Chrome"/>
-  <test name="IETest(failed)" parallel="tests">
-    <parameter name="sBrowser" value="IE"/>
+  <test thread-count="1" name="Chrometest(failed)" parallel="tests">
+    <parameter name="sBrowser" value="Chrome"/>
     <classes>
       <class name="NKpackage.NewTest1">
         <methods>
           <include name="beforeTest"/>
+          <include name="NewTest1"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- NKpackage.NewTest1 -->
-      <class name="NKpackage.NewTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="NewTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- NKpackage.NewTest -->
     </classes>
-  </test> <!-- IETest(failed) -->
+  </test> <!-- Chrometest(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->
